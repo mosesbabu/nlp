@@ -3,6 +3,7 @@
 [build]
   command = """
     gem install bundler -v '2.0.2'
+    source /opt/buildhome/python3.7/bin/activate
     pip install -U git+https://github.com/jupyter/jupyter-book
     jupyter-book create mybook --content-folder content
     cd mybook
